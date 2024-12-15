@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faBars, faHouse ,faBriefcase, faAddressCard} from '@fortawesome/free-solid-svg-icons'
 import './Sidebar.css'
-import { Link, useLocation } from 'react-router-dom';
 
 interface SidebarProps {
     onNavigate: (section: string) => void;
@@ -12,7 +11,7 @@ const Sidebar: React.FC <SidebarProps> =({onNavigate}) => {
 
     const [isSidebarOpen, setIsSidebarOpen] = useState(true);
     //const location = useLocation();
-    const[activePath, setActivePath] = useState(location.pathname);
+    // const[activePath, setActivePath] = useState(location.pathname);
     
 
 
@@ -41,7 +40,8 @@ const Sidebar: React.FC <SidebarProps> =({onNavigate}) => {
             {menuItems.map(item =>(
                 <li 
                 key={item.label}
-                className={`icons-sidebar ${activePath ===item.path? 'active':''}`}
+                // className={`icons-sidebar ${activePath ===item.path? 'active':''}`}
+                className={`icons-sidebar active`}
                 onClick={()=>onNavigate(item.path)}
                 style={{cursor:'pointer'}}
                 >

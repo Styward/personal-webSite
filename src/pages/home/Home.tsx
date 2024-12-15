@@ -1,11 +1,10 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef } from 'react';
 import './Home.css'
 import AbautMe from '../abaut-me/AbautMe';
 import Layout from '../../components/layout-component/MainLayout';
 import Projects from '../projects/Projects';
 
 const Home: React.FC = () => {
-    const[isAbautMe, setAbautMe]=useState(true);
 
     const homeRef = useRef<HTMLDivElement>(null);
     const aboutMeRef = useRef<HTMLDivElement>(null);
