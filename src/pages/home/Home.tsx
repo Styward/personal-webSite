@@ -2,13 +2,14 @@ import React, { useRef, useState } from 'react';
 import './Home.css'
 import AbautMe from '../abaut-me/AbautMe';
 import Layout from '../../components/layout-component/MainLayout';
+import Projects from '../projects/Projects';
 
 const Home: React.FC = () => {
     const[isAbautMe, setAbautMe]=useState(true);
 
     const homeRef = useRef<HTMLDivElement>(null);
     const aboutMeRef = useRef<HTMLDivElement>(null);
-    const briefcaseRef = useRef<HTMLDivElement>(null);
+    const projects = useRef<HTMLDivElement>(null);
 
     const handleNavigate = (section:string) => {
 
@@ -19,8 +20,8 @@ const Home: React.FC = () => {
                 case '/about-me':
                     aboutMeRef.current?.scrollIntoView({ behavior: 'smooth' });               
                 break;
-                case '/briefcase':
-                    briefcaseRef.current?.scrollIntoView({ behavior: 'smooth' });               
+                case '/projects':
+                    projects.current?.scrollIntoView({ behavior: 'smooth' });               
                 break;            
             default:
                 homeRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -44,7 +45,11 @@ const Home: React.FC = () => {
                     <label className='standard-subtitle-home'>Software Developer</label>
                 </div>
                 <div className='col-md-12'>
-                    <p className='standard-text-p-home'>some senence about me</p>
+                    <p className='standard-text-p-home'>
+                        <i>
+                    Everything you've ever wanted is on the other side of fear
+                    </i>
+                    </p>
                 </div>
 
                 <div className='col-md-12'>
@@ -57,6 +62,10 @@ const Home: React.FC = () => {
       
             <div ref={aboutMeRef} className='content-abautme'>
             <AbautMe/>
+            </div>
+
+            <div ref={projects} className='content-abautme'>
+            <Projects/>
             </div>
   
 

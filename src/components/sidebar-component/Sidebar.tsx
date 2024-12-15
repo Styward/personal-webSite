@@ -23,7 +23,7 @@ const Sidebar: React.FC <SidebarProps> =({onNavigate}) => {
       const menuItems = [
         { label: 'Home', path: '/', icon:<FontAwesomeIcon style={{ color:'#FFFFFF' }} icon={faHouse} /> },
         { label: 'About Me', path: '/about-me', icon:<FontAwesomeIcon style={{ color:'#FFFFFF' }} icon={faAddressCard} />},
-        { label: 'briefcase', path: '/briefcase', icon:<FontAwesomeIcon style={{ color:'#FFFFFF' }} icon={faBriefcase} /> },
+        { label: 'Projects', path: '/projects', icon:<FontAwesomeIcon style={{ color:'#FFFFFF' }} icon={faBriefcase} /> },
        
       ];
       

@@ -8,6 +8,7 @@ import {BrowserRouter as Router, Route,  Routes } from "react-router-dom";
 import Home from "./pages/home/Home";
 import MainLayout from "./components/layout-component/MainLayout";
 import AbautMe from "./pages/abaut-me/AbautMe";
+import Projects from "./pages/projects/Projects"
 
 // function App() {
 //   const [count, setCount] = useState(0)

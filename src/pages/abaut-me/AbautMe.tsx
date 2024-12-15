@@ -25,7 +25,7 @@ const AbautMe: React.FC = () => {
                     </div>
                     <div className='col-md-12'>
                 <p className="standard-text-p" style={{ padding: '0 60px 0 40px', textAlign:'justify' }}>
-                    Hello I'm Styward campo Informatic Engeener from Institución universitaria Colegio Mayor Del Cauca,
+                    Hello I'm Styward Campo Computer Engineering from Institución universitaria Colegio Mayor Del Cauca,
                     tecnical specialize in Management and security in data bases. I have experience whit development back-end
                     and front-end but i feel most comfortable working in the back-end. I like learn news tecnologies and work
                     in projects that contain Artificial intelligent (AI).
